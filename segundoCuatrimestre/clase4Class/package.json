@@ -1,0 +1,15 @@
+{
+  "name": "clase4class",
+  "version": "1.0.0",
+  "description": "",
+  "main": "classes.js",
+  "scripts": {
+    "convertir": "tsc classes.ts",
+    "ejecutar": "node classes.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^18.11.2"
+  }
+}
