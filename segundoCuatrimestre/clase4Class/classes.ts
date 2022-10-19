@@ -1,57 +1,63 @@
-class Animal{
-cantidadDePatas: number;
-nombre: string;
-
-mostrarInfo(){
-    console.log("la info es: ")
+class Decodificador {
+    private canales;
+    
+    public constructor(canales){
+        this.canales = canales;
     }
-constructor(cantPatas: number,name: string){
-     this.cantidadDePatas = cantPatas;
-     this.nombre = name;
- }
 }
 
-let araña = new Animal(8, "fido");
-console.log(araña)
-
+let decodificador = new Decodificador(5);
 
 class Televisor{
-    volumen: number;
-    canal: number;
-    estaPrendido: boolean;
+    private volumen: number;
+    private canal: number;
+    private estaPrendido: boolean;
+    private pulgadas: number;
+    private decodificador: Decodificador;
 
-    constructor(volume: number, channel: number, itsOn: boolean){
+    public constructor(volume: number, channel: number, itsTurnedOn: boolean, decoder: Decodificador, screenSize?: number) {
          this.canal = channel;
          this.volumen = volume;
-         this.estaPrendido = itsOn;
+         this.estaPrendido = itsTurnedOn;
+         this.decodificador = decoder;
+
+         if (screenSize == undefined) {
+            this.pulgadas = -1
+         } else {
+            this.pulgadas = screenSize
+         }
      }
     
     
-    subirVolumen() : void {
+    public subirVolumen() : void {
         this.volumen = this.volumen + 1;
     }
-    bajarVolumen() : void {
+    public bajarVolumen() : void {
         this.volumen = this.volumen - 1;
     }
 
-    apagarTele() {
+    public apagarTele() {
         this.estaPrendido = false;
     }
 
-    prenderTele() {
+    public prenderTele() {
         this.estaPrendido = true;
     }
 
-    getCanal() {
+    public getCanal() {
         return "esta en el canal " + this.canal;
     }
 
-    setCanal(canal: number) {
+    public setCanal(canal: number) {
         this.canal = canal
     }
 }
 
-let televisor1 = new Televisor(10, 54, true);
+let televisor1 = new Televisor(10, 54, true, decodificador);
+let televisor2 = new Televisor(15, 12, true, decodificador);
+let televisor3 = new Televisor(20, 34, true, decodificador);
+
+let arregloTelevisore : Televisor[] = [televisor1, televisor2, televisor3]
 
 console.log(televisor1.getCanal())
 televisor1.setCanal(20)
