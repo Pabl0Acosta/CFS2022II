@@ -1,0 +1,17 @@
+{
+  "name": "ejerciciofueradeclase",
+  "version": "1.0.0",
+  "description": "",
+  "main": "registroAutomotor.js",
+  "scripts": {
+    "convertir": "tsc classes.ts",
+    "ejecutar": "node classes.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^18.11.2",
+    "readline-sync": "^1.4.10"
+  }
+}
