@@ -1,0 +1,1 @@
+Renault,12,rojo;Fiat,600,negro;Fiat,Duna,Blanco
