@@ -1,4 +1,3 @@
-"use strict";
 //Ejercicio1: Crear una clase -con al menos 2 métodos y 2 atributos-
 //Ejercicio2: Crear un objeto-
 var __extends = (this && this.__extends) || (function () {
@@ -16,7 +15,6 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-exports.__esModule = true;
 var Televisor = /** @class */ (function () {
     function Televisor(tamaño, canal) {
         this.tamaño = tamaño;
@@ -64,10 +62,6 @@ var Homero = /** @class */ (function (_super) {
     };
     return Homero;
 }(Simpson));
-//------------------------------------------------------------------------------
-//Ejercicio5: Crear una relación de herencia
-//Ejercicio6: Crear un ejemplo de composición
-var Fabricante_1 = require("./Fabricante");
 var Celular = /** @class */ (function () {
     function Celular(color) {
         this.color = color;
@@ -79,20 +73,44 @@ var Celular = /** @class */ (function () {
 }());
 var CelularNuevo = /** @class */ (function (_super) {
     __extends(CelularNuevo, _super);
-    function CelularNuevo(fabricante) {
-        var _this = _super.call(this, "negro") || this;
-        _this.fabricante = fabricante;
-        return _this;
+    function CelularNuevo() {
+        return _super.call(this, "negro") || this;
     }
     CelularNuevo.prototype.Sonar = function () {
         console.log("ring ring");
     };
-    CelularNuevo.prototype.setFabricante = function (nuevoFabricante) {
-        this.fabricante = nuevoFabricante;
-    };
     return CelularNuevo;
 }(Celular));
-var nokia = new Fabricante_1["default"]("nokia");
-var smartphone = new CelularNuevo(nokia);
+var smartphone = new CelularNuevo();
 console.log(smartphone);
 smartphone.Sonar();
+//------------------------------------------------------------------------------
+//Ejercicio6: Crear un ejemplo de composición
+var Pantalla = /** @class */ (function () {
+    function Pantalla(pulgadas) {
+        this.pulgadas = pulgadas;
+    }
+    return Pantalla;
+}());
+var Cable = /** @class */ (function () {
+    function Cable() {
+    }
+    return Cable;
+}());
+var Antena = /** @class */ (function () {
+    function Antena() {
+    }
+    return Antena;
+}());
+var televisor = /** @class */ (function () {
+    function televisor(pantalla, cable, antena) {
+        this.pantalla = pantalla;
+        this.cable = cable;
+        this.antena = antena;
+    }
+    return televisor;
+}());
+var cable = new Cable();
+var pantalla = new Pantalla(42);
+var antena = new Antena();
+var smart = new televisor(pantalla, cable, antena);

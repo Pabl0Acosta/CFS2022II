@@ -58,10 +58,7 @@ class Homero extends Simpson {
     }
 }
 
-//------------------------------------------------------------------------------
-//Ejercicio5: Crear una relación de herencia
-//Ejercicio6: Crear un ejemplo de composición
-import Fabricante from "./Fabricante";
+
 class Celular {
     protected color: string;
     constructor(color: string) {
@@ -74,25 +71,57 @@ class Celular {
 }
 
 class CelularNuevo extends Celular{
-    private fabricante: Fabricante;
 
-        constructor(fabricante: Fabricante) {
+        constructor() {
         super("negro");
-            this.fabricante = fabricante;
 }
     public Sonar(): void {
         console.log("ring ring");
   }
-  public setFabricante(nuevoFabricante : Fabricante) : void {
-    this.fabricante = nuevoFabricante;
-}
 }
 
-let nokia = new Fabricante("nokia")
-let smartphone: CelularNuevo = new CelularNuevo(nokia);
+
+let smartphone: CelularNuevo = new CelularNuevo();
 console.log(smartphone);
 smartphone.Sonar();
 
+//------------------------------------------------------------------------------
+//Ejercicio6: Crear un ejemplo de composición
+class Pantalla{
+    private pulgadas : number;
 
+    constructor(pulgadas : number){
+        this.pulgadas = pulgadas;
+    }
+}
 
+class Cable{
+    constructor(){
 
+    }
+}
+
+class Antena{
+    constructor(){
+         
+    }
+}
+
+class televisor{
+    private pantalla : Pantalla;
+    private cable : Cable;
+    private antena : Antena;
+
+    constructor(pantalla : Pantalla, cable : Cable , antena : Antena){
+        this.pantalla = pantalla;
+        this.cable = cable;
+        this.antena = antena;
+    }
+
+}
+
+let cable : Cable = new Cable();
+let pantalla : Pantalla = new Pantalla(42);
+let antena : Antena = new Antena();
+
+let smart : televisor = new televisor(pantalla,cable,antena);
