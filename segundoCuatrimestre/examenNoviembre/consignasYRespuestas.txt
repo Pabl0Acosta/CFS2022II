@@ -1,0 +1,30 @@
+1 ¿A que se llama Herencia?
+2 ¿Qué es una subclase?
+3 Que es un objeto?
+4 ¿Qué significa que un atributo sea protegido?
+5 Existe la herencia múltiple en Typescript?
+6 Definir Poliformismo
+7 ¿Qué es un constructor? Para qué sirve?
+8 ¿Cómo se crea una clase abstracta?
+9 ¿Para que se usa el super?
+10 ¿Qué son las interfaces?
+
+Ejercicios de codeo
+Ejercicio1: Crear una clase -con al menos 2 métodos y 2 atributos-
+Ejercicio2: Crear un objeto
+Ejercicio3: Crear una interfaz - implementarla en una clase-
+Ejercicio4: Crear una clase Abstracta
+Ejercicio5: Crear una relación de herencia
+Ejercicio6: Crear un ejemplo de composición
+
+Respuestas
+1: herencia se refiere los parametros y metodos que una clase hija obtiene de una clase madre mediante el uso de extends
+2: una subclase es una clase creada a partir de otra clase.
+3: un objeto es una instancia creada a partir de una clase.
+4: un atributo protegido de una clase puede ser modificado por su subclase y objetos creados a partir de ella.
+5: no, en typescript no existe herencia multiple.
+6: Poliformismo es la capacidad de un objeto de presentar distintas formas dependiendo de donde y cuando es usado.
+7: el constructor es un metodo de una clase que permite crear objetos tomando a partir de sus parametros y metodos.
+8: una clase abstracta se crea escribiendo abstract antes de class (ej: animal = abstract class Animal{}) y antes de su metodo, debe poseer al menos un metodo abstracto (abstract Caminar()) y no puede crear objetos, debe tener una subclase que pueda hacerlo por ella.
+9: super() es utilizado cuando una subclase hereda el constructor de su clase madre o "superclase", evitando que entre en conflicto con su propio constructor.
+10: las interfaces son un mecanismo de intenta suplir la falta de herencia multiple en typescript, son parecidos a las clases pero sin pasarle valores a sus metodos y parametros.
