@@ -1,0 +1,18 @@
+1 - Que es un objeto?
+2 - Que es una clase?
+3 - A que se llama metodo constructor?
+4 - Que son los modificadores de acceso?
+5 - Que diferencia hay entre uno privado y uno protegido?
+6 - Cuando se usa el this?
+7 - Cuando se usa el super?
+8 - A que se llama sub-clase, o clase hija?
+
+
+1 un objeto es una instancia, creada a partir de una clase, puede tener parametros y metodos
+2 una clase es una plantilla a partir de la cual se crean objetos o sub-clases, los cuales obtienen sus parametros y metodos.
+3 el metodo constructor se refiere a la creacion de objetos tomando los parametros y metodos de la clase.
+4 los modificadores de acceso son "permisos" que la clase le da (o no) a sus subclases u objetos.
+5 si el modificador es privado, no puede ser alterado por ninguna clase u objeto, si es protegido puede ser modificado por su subclase y objetos creados a partir de ella.
+6 this. se utiliza para indicar el parametro a ser modificado por el constructor de su clase
+7 super() es utilizado cuando una subclase hereda el constructor de su clase madre o "superclase", evitando que entre en conflicto con su propio constructor.
+8 clase hija es una clase creada a partir de una clase madre, o superclase.
