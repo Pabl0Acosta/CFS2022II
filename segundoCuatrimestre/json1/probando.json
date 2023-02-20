@@ -1,0 +1,28 @@
+{
+    "nombre":"John Doe",
+    "profesion":"programador",
+    "edad":25,
+    "lenguajes":["PHP","Javascript","Dart"],
+    "disponibilidadParaViajar": true,
+    "haceEjercicio":"los dias que puede",
+    "rango profesional": {
+        "aniosDeExperiencia":12,
+        "nivel":"senior"},
+    "peliculas": [
+         {
+             "id":54321,
+             "name":"El Padrino",
+             "year": 1972
+         },
+         {
+             "id":12345,
+             "name":"El Padrino 2",
+             "year": 1974
+         },
+         {
+             "id":33333,
+             "name":"El Padrino 3",
+             "year": 1990
+         }
+     ]
+ }
