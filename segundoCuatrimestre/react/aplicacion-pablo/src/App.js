@@ -1,25 +1,47 @@
-import logo from './logo.svg';
-import './App.css';
+//Ejercicio 1
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+/*import Gallery from './index.js';
+
+export default function Page() {
+    return (
+        <div className="Page">
+            <Gallery />
+            <Gallery />
+        </div>
+    );
+}*/
+
+//Ejercicio 2
+
+/*import Form from './ejercicio2.js';
+
+export default function Page() {
+    return (
+        <div className="Page">
+            <Form />
+        </div>
+    );
+}*/
+
+//Ejercicio 3
+
+/*import FeedbackForm from './ejercicio3.js';
+
+export default function Page() {
+    return (
+        <div className="Page">
+            <FeedbackForm />
+        </div>
+    );
+}*/
+
+
+import FeedbackForm from './ejercicio4.js';
+
+export default function Page() {
+    return (
+        <div className="Page">
+            <FeedbackForm />
+        </div>
+    );
 }
-
-export default App;
