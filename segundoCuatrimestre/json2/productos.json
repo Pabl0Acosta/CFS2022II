@@ -1,0 +1,26 @@
+[
+    {
+        "id":1,
+        "nombre":"Conjunto Jess",
+        "precio":199,
+        "descripcion": "blablabla",
+        "imagen": "https://estaticos-cdn.prensaiberica.es/clip/ffebd450-df2a-4655-982e-25dcc7a1c913_source-aspect-ratio_default_0.png",
+        "cantidad": 5
+    },
+    {
+        "id":2,
+        "nombre":"Conjunto Marilyn",
+        "precio":500,
+        "descripcion": "globglobglob",
+        "imagen": "https://laopinion.com/wp-content/uploads/sites/3/2021/09/conjunto_shutterstock_1920201881.jpg?quality=80&strip=all&w=1200",
+        "cantidad": 3
+    },
+    {
+        "id":2,
+        "nombre":"Conjunto Andorra",
+        "precio":900,
+        "descripcion": "bleubleubla",
+        "imagen": "https://www.michilenceria.com.ar/post/a4253-big.jpg",
+        "cantidad": 14
+    }
+]
